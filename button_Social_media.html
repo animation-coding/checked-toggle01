@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>button Social media</title>
+    <!-----font-awesome----->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<style>
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+body
+{
+    background: #deeaf6;
+    color: rgb(143, 143, 143);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+.toggles-container
+{
+    background:linear-gradient(-45deg, rgb(224,236,248), rgb(243,247,251));
+    height: 350px;
+    width: 350px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap:30px;
+    grid-row-gap:30px;
+    box-shadow:
+     -3px -3px 10px rgb(255 255 255 / 58%),
+    3px 3px 10px rgb(166 182 195 / 72%);
+    border-radius: 10px;
+
+}
+.toggle-box
+{
+   background:linear-gradient(-45deg, rgb(224,236,248), rgb(243,247,251));
+   border-radius: 10px;
+   box-shadow: -3px -3px 10px #fff,
+   3px 3px 10px #b7c1ccad;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+   transition:box-shadow 700ms ease, color 700ms ease;
+}
+.toggle-pressed
+{
+    background:linear-gradient(-45deg, rgb(243,247,251),  rgb(224,236,248));    
+}
+.toggles-icon
+{
+    font-size: 25px;
+}
+.toggle-box:nth-child(1) i
+{
+    color: #c4302b;
+}
+.toggle-box:nth-child(2) i
+{
+    color: #4dae4f;
+}
+.toggle-box:nth-child(3) i
+{
+    color: #00acee;
+}
+.toggle-box:nth-child(4) i
+{
+    color: #3b5998;
+}
+.toggle-box:nth-child(5) i
+{
+    color: #fdc13b;
+}
+.toggle-box:nth-child(6) i
+{
+    color: #b23d3b;
+}
+.toggle-box:nth-child(7) i
+{
+    color: #2b7fb5;
+}
+.toggle-box:nth-child(8) i
+{
+    color: #ea4c89;
+}
+.toggle-box:nth-child(9) i
+{
+    color: #ce5761;
+}
+.toggle-box:nth-child(10) i
+{
+    color: #34414b;
+}
+.toggle-box:nth-child(11) i
+{
+    color: #2174c9;
+}
+.toggle-box:nth-child(12) i
+{
+    color: #211f1f;
+}
+.toggle-box:nth-child(13) i
+{
+    color: #00aff0;
+}
+.toggle-box:nth-child(14) i
+{
+    color: #8ed131;
+}
+.toggle-box:nth-child(15) i
+{
+    color: #ff4500;
+}
+.toggle-box:nth-child(16) i
+{
+    color: #665cac;
+}
+
+</style>
+</head>
+<body>
+ 
+<div class="toggles-container">
+    <div class="toggle-box">
+        <i class="fab fa-youtube toggles-icon"></i>
+    </div>
+
+    <div class="toggle-box">
+        <i class="fab fa-whatsapp toggles-icon"></i>
+    </div>
+
+    <div class="toggle-box">
+        <i class="fab fa-twitter toggles-icon"></i>
+    </div>
+
+    <div class="toggle-box">
+        <i class="fab fa-facebook-f toggles-icon"></i>
+    </div>
+    <div class="toggle-box">
+        <i class="fab fa-snapchat-ghost toggles-icon"></i>
+    </div>
+
+    <div class="toggle-box">
+        <i class="fab fa-pinterest-p toggles-icon"></i>
+    </div>
+
+    <div class="toggle-box">
+        <i class="fab fa-behance toggles-icon"></i>
+    </div>
+
+    <div class="toggle-box">
+        <i class="fab fa-dribbble toggles-icon"></i>
+    </div>
+    <div class="toggle-box">
+        <i class="fab fa-instagram toggles-icon"></i>
+    </div>
+
+    <div class="toggle-box">
+        <i class="fab fa-tumblr toggles-icon"></i>
+    </div>
+
+    <div class="toggle-box">
+        <i class="fab fa-linkedin-in toggles-icon"></i>
+    </div>
+    <div class="toggle-box">
+        <i class="fab fa-github toggles-icon"></i>
+    </div>
+    <div class="toggle-box">
+        <i class="fab fa-skype toggles-icon"></i>
+    </div>
+    <div class="toggle-box">
+        <i class="fab fa-weixin toggles-icon"></i>
+    </div>
+    <div class="toggle-box">
+        <i class="fab fa-reddit-alien toggles-icon"></i>
+    </div>
+    <div class="toggle-box">
+        <i class="fab fa-viber toggles-icon"></i>
+    </div>
+</div>
+
+<script>
+const toggleBtns = document.querySelectorAll('.toggle-box');
+toggleBtns.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        btn.classList.toggle('toggle-pressed');
+    });
+});
+</script>
+
+</body>
+</html>
